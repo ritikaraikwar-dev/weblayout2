@@ -26,7 +26,7 @@
  }
  .top-head  a{
      color: #fff;
-     text-decoration: none;
+      
  }
 /* Top head section start */
 
@@ -87,11 +87,20 @@ nav ul li a {
 aside{
     background: silver;
     padding: 15px 100px 50px 15px;
-    height: 200px;
+    height: 350px;
 }
 aside ul li{
     list-style: none;
     padding-left: 20px;
+    width: 200px;
+}
+
+article ul {
+    padding-left: 60px;
+}
+
+article ol {
+    padding-left: 60px;
 }
 /* main section end */
 
@@ -117,3 +126,47 @@ footer .third{
      
 }
 /* footer section end */
+
+/* Media Queries Start */
+@media screen and (max-width:991) {
+    
+    .top-head, footer{
+        height: auto;
+        padding: 0px;
+    }
+    .top-head ul li{
+        display: block;
+    }
+    header{
+        padding: 0px 0px 0px 10px;
+    }
+    .main{
+         
+        padding: 0px  ;
+   }
+   @media screen and (max-width:767){
+       .main article, .main aside{
+        float: none;
+        width: 100%;
+        padding: 0px;
+       }
+       footer .first, footer .second footer .third{
+        float: none;
+        width: 100%;
+        text-align: center;
+       }
+   }
+     
+    @media screen and (max-width:586) {
+
+        header{
+            line-height: none;
+        }
+        header h1{
+            display: block;
+        }
+
+    }
+    
+}
+/* Media Queries end */
